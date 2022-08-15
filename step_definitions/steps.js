@@ -11,7 +11,7 @@ When('preencho o campo Celular apenas com o número de telefone celular - Valor 
 I.see('Celular');
 I.see('Você receberá um código de confirmação no número de telefone celular informado')
 I.seeElement('//android.widget.EditText[@content-desc="insira o numero de celular"]');
-I.fillField('~insira o numero de celular', '(21)999999999');
+I.fillField('~insira o numero de celular', '21999999999');
 });
 
 When('clico no botão > para validação do número celular', () => {

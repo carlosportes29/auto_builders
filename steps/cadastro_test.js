@@ -24,7 +24,8 @@ I.click('//android.view.ViewGroup[@content-desc="Cadastrar"]');
 I.see('Celular');
 I.see('Você receberá um código de confirmação no número de telefone celular informado')
 I.seeElement('//android.widget.EditText[@content-desc="insira o numero de celular"]');
-I.fillField(FIELD_NUM_CELULAR, '(21)999999999');
+I.fillField(FIELD_NUM_CELULAR, '21999999999');
+I.wait(3);
 
 //Clicar no botão > para validação do número celular
 I.click(BTN_AVANÇAR_CELULAR);
@@ -33,6 +34,7 @@ I.click(BTN_AVANÇAR_CELULAR);
 I.waitForElement('~Insira o nome completo', 5);
 I.see('Nome Completo')
 I.fillField(FIELD_NUM_NOME, 'Teste Teste');
+I.wait(1);
 
 //Clicar no botão > para validação de Nome Completo
 I.click(BTN_AVANÇAR_NOME);
