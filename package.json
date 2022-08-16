@@ -4,12 +4,16 @@
   "description": "Desafio de Automação - Builders",
   "main": "index.js",
   "scripts": {
-    "test": "npx codeceptjs run --steps"
+    "test": "npx codeceptjs run --reporter mochawesome"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "codeceptjs": "^3.3.4",
+    "mochawesome": "^7.1.3",
     "webdriverio": "^7.20.9"
+  },
+  "devDependencies": {
+    "mocha": "^10.0.0"
   }
 }

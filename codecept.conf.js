@@ -15,7 +15,11 @@ exports.config = {
     I: './steps_file.js',
     cadastro_pagePage: './pages/cadastro_page.js'
   },
-  mocha: {},
+  mocha: {
+    "reporterOptions": {
+      "reportDir": "output"
+  }
+},
   bootstrap: null,
   timeout: null,
   teardown: null,
